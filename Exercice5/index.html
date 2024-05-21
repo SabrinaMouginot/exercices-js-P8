@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page sans Accessibilité</title>
+    <title>Page Accessible</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,21 +15,23 @@
     <main>
         <p>Ceci est un paragraphe de texte.</p>
 
-        <!-- Formulaire sans étiquette pour les champs -->
+        <!-- Formulaire avec étiquettes pour les champs et classes CSS -->
         <form>
-            <label for="name">Nom :</label>
-            <input id="name" type="text" placeholder="Entrez votre nom">
-            <br>
-            <label for="email">Adresse e-mail :</label>
-            <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
-            <br>
+            <div class="input-group">
+                <label for="name">Nom :</label>
+                <input id="name" type="text" placeholder="Entrez votre nom">
+            </div>
+            <div class="input-group">
+                <label for="email">Adresse e-mail :</label>
+                <input id="email" type="email" placeholder="Entrez votre adresse e-mail">
+            </div>
             <button type="submit">Envoyer</button>
         </form>
 
-        <!-- Image sans attribut alt -->
-        <img src="assets/image.png" alt="Description de l'image" height=250>
+        <!-- Image avec attribut alt et classe CSS -->
+        <img src="assets/image.png" alt="Description de l'image">
 
-        <!-- Lien sans texte descriptif -->
+        <!-- Lien avec texte descriptif -->
         <a href="#" aria-label="Lien descriptif vers une ressource ou une page">Cliquez ici pour en savoir plus</a>
     </main>
 </body>
