@@ -1,6 +1,6 @@
 // Créez votre fonction ici
 function calculate(num1, num2, operator) {
-    // Vérifier le type d'opérateur et effectuer l'opération correspondante
+    // Je vérifie le type d'opérateur et j'effectue l'opération.
     switch (operator) {
         case '+':
             return num1 + num2;
@@ -9,7 +9,7 @@ function calculate(num1, num2, operator) {
         case '*':
             return num1 * num2;
         case '/':
-            // Vérifier si la division par zéro est tentée
+            // Je vérifie si on divise par 0 (opération impossible)
             if (num2 === 0) {
                 return "Division by zero is not allowed";
             }
